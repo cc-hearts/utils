@@ -1,0 +1,4325 @@
+{
+	"id": 0,
+	"name": "@cc-heart/utils",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 121,
+			"name": "_toString",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/validate.ts",
+					"line": 1,
+					"character": 13,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L1"
+				}
+			],
+			"signatures": [
+				{
+					"id": 122,
+					"name": "_toString",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Returns a string representation of an object."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/validate.ts",
+							"line": 1,
+							"character": 13,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L1"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": 71,
+			"name": "arrayToQueryString",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/url.ts",
+					"line": 138,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/url.ts#L138"
+				}
+			],
+			"signatures": [
+				{
+					"id": 72,
+					"name": "arrayToQueryString",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Convert a multi-dimensional array to a query string."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The generated query string."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/url.ts",
+							"line": 138,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/url.ts#L138"
+						}
+					],
+					"parameters": [
+						{
+							"id": 73,
+							"name": "array",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The multi-dimensional array to convert."
+									}
+								]
+							},
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "unknown"
+								}
+							}
+						},
+						{
+							"id": 74,
+							"name": "field",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The field name to use in the query string."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": 67,
+			"name": "basename",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/url.ts",
+					"line": 116,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/url.ts#L116"
+				}
+			],
+			"signatures": [
+				{
+					"id": 68,
+					"name": "basename",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Returns the last portion of a path, similar to the Unix basename command.\nTrims the query string if it exists.\nOptionally, removes a suffix from the result."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The basename of the path."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/url.ts",
+							"line": 116,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/url.ts#L116"
+						}
+					],
+					"parameters": [
+						{
+							"id": 69,
+							"name": "path",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The path to get the basename from."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 70,
+							"name": "suffix",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "An optional suffix to remove from the basename."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": 42,
+			"name": "capitalize",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/string.ts",
+					"line": 7,
+					"character": 13,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/string.ts#L7"
+				}
+			],
+			"signatures": [
+				{
+					"id": 43,
+					"name": "capitalize",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Capitalizes the first letter of a string."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "- The capitalized string."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/string.ts",
+							"line": 7,
+							"character": 26,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/string.ts#L7"
+						}
+					],
+					"typeParameter": [
+						{
+							"id": 44,
+							"name": "T",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"parameters": [
+						{
+							"id": 45,
+							"name": "target",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The string to be capitalized."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": 44,
+								"name": "T",
+								"package": "@cc-heart/utils",
+								"refersToTypeParameter": true
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/typescript@5.5.3/node_modules/typescript/lib/lib.es5.d.ts",
+							"qualifiedName": "Capitalize"
+						},
+						"typeArguments": [
+							{
+								"type": "reference",
+								"target": 44,
+								"name": "T",
+								"package": "@cc-heart/utils",
+								"refersToTypeParameter": true
+							}
+						],
+						"name": "Capitalize",
+						"package": "typescript"
+					}
+				}
+			]
+		},
+		{
+			"id": 139,
+			"name": "compose",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/workers.ts",
+					"line": 93,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/workers.ts#L93"
+				}
+			],
+			"signatures": [
+				{
+					"id": 140,
+					"name": "compose",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Takes a series of functions and returns a new function that runs these functions in reverse sequence.\nIf a function returns a Promise, the next function is called with the resolved value."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "A new function that takes any number of arguments and composes them through "
+									},
+									{
+										"kind": "code",
+										"text": "`fns`"
+									},
+									{
+										"kind": "text",
+										"text": "."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/workers.ts",
+							"line": 93,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/workers.ts#L93"
+						}
+					],
+					"parameters": [
+						{
+							"id": 141,
+							"name": "fns",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isRest": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The functions to compose."
+									}
+								]
+							},
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"target": {
+										"sourceFileName": "typings/helper.ts",
+										"qualifiedName": "Fn"
+									},
+									"name": "Fn",
+									"package": "@cc-heart/utils"
+								}
+							}
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 142,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "lib/workers.ts",
+									"line": 73,
+									"character": 9,
+									"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/workers.ts#L73"
+								}
+							],
+							"signatures": [
+								{
+									"id": 143,
+									"name": "__type",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "lib/workers.ts",
+											"line": 73,
+											"character": 9,
+											"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/workers.ts#L73"
+										}
+									],
+									"parameters": [
+										{
+											"id": 144,
+											"name": "args",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isRest": true
+											},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "intrinsic",
+													"name": "any"
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": 64,
+			"name": "convertParamsRouterToRegExp",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/url.ts",
+					"line": 100,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/url.ts#L100"
+				}
+			],
+			"signatures": [
+				{
+					"id": 65,
+					"name": "convertParamsRouterToRegExp",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "convert params routes to regular expressions"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "null or An array contains the RegExp that matches the params and the path for each params parameter"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/url.ts",
+							"line": 100,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/url.ts#L100"
+						}
+					],
+					"parameters": [
+						{
+							"id": 66,
+							"name": "path",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "a params paths"
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "array",
+								"elementType": {
+									"type": "union",
+									"types": [
+										{
+											"type": "reference",
+											"target": {
+												"sourceFileName": "node_modules/.pnpm/typescript@5.5.3/node_modules/typescript/lib/lib.es5.d.ts",
+												"qualifiedName": "RegExp"
+											},
+											"name": "RegExp",
+											"package": "typescript"
+										},
+										{
+											"type": "array",
+											"elementType": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": 20,
+			"name": "defineDebounceFn",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/define.ts",
+					"line": 23,
+					"character": 13,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/define.ts#L23"
+				}
+			],
+			"signatures": [
+				{
+					"id": 21,
+					"name": "defineDebounceFn",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "DefineDebounceFn is a function that creates a debounced function."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "- The debounce function."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/define.ts",
+							"line": 23,
+							"character": 13,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/define.ts#L23"
+						}
+					],
+					"parameters": [
+						{
+							"id": 22,
+							"name": "fn",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The function to be debounced."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "lib/define.ts",
+									"qualifiedName": "CacheResultFunc"
+								},
+								"name": "CacheResultFunc",
+								"package": "@cc-heart/utils"
+							}
+						},
+						{
+							"id": 23,
+							"name": "delay",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The delay in milliseconds to wait before the debounced function is called. Default is 500ms."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 24,
+							"name": "immediate",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Whether the debounced function should be called immediately before the delay. Default is false."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				}
+			]
+		},
+		{
+			"id": 5,
+			"name": "defineOnceFn",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/define.ts",
+					"line": 51,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/define.ts#L51"
+				}
+			],
+			"signatures": [
+				{
+					"id": 6,
+					"name": "defineOnceFn",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Creates a function that can only be called once."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "- A new function that can only be called once."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/define.ts",
+							"line": 51,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/define.ts#L51"
+						}
+					],
+					"typeParameter": [
+						{
+							"id": 7,
+							"name": "T",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {}
+						}
+					],
+					"parameters": [
+						{
+							"id": 8,
+							"name": "fn",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The function to be called once."
+									}
+								]
+							},
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 9,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "lib/define.ts",
+											"line": 51,
+											"character": 36,
+											"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/define.ts#L51"
+										}
+									],
+									"signatures": [
+										{
+											"id": 10,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "lib/define.ts",
+													"line": 51,
+													"character": 36,
+													"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/define.ts#L51"
+												}
+											],
+											"parameters": [
+												{
+													"id": 11,
+													"name": "args",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {
+														"isRest": true
+													},
+													"type": {
+														"type": "intrinsic",
+														"name": "any"
+													}
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": 7,
+												"name": "T",
+												"package": "@cc-heart/utils",
+												"refersToTypeParameter": true
+											}
+										}
+									]
+								}
+							}
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 12,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "lib/define.ts",
+									"line": 57,
+									"character": 9,
+									"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/define.ts#L57"
+								}
+							],
+							"signatures": [
+								{
+									"id": 13,
+									"name": "__type",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "lib/define.ts",
+											"line": 57,
+											"character": 9,
+											"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/define.ts#L57"
+										}
+									],
+									"parameters": [
+										{
+											"id": 14,
+											"name": "this",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "any"
+											}
+										},
+										{
+											"id": 15,
+											"name": "args",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isRest": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "any"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": 7,
+										"name": "T",
+										"package": "@cc-heart/utils",
+										"refersToTypeParameter": true
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": 16,
+			"name": "defineThrottleFn",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/define.ts",
+					"line": 72,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/define.ts#L72"
+				}
+			],
+			"signatures": [
+				{
+					"id": 17,
+					"name": "defineThrottleFn",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "defineThrottleFn is a function that creates a throttled function."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "- The throttled function."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/define.ts",
+							"line": 72,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/define.ts#L72"
+						}
+					],
+					"parameters": [
+						{
+							"id": 18,
+							"name": "fn",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The function to be throttled."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "typings/helper.ts",
+									"qualifiedName": "Fn"
+								},
+								"name": "Fn",
+								"package": "@cc-heart/utils"
+							}
+						},
+						{
+							"id": 19,
+							"name": "delay",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The delay in milliseconds to wait before the throttled function is called. Default is 500ms."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"defaultValue": "500"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "lib/define.ts",
+							"qualifiedName": "CacheResultFunc"
+						},
+						"name": "CacheResultFunc",
+						"package": "@cc-heart/utils"
+					}
+				}
+			]
+		},
+		{
+			"id": 123,
+			"name": "executeConcurrency",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/workers.ts",
+					"line": 5,
+					"character": 22,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/workers.ts#L5"
+				}
+			],
+			"signatures": [
+				{
+					"id": 124,
+					"name": "executeConcurrency",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/workers.ts",
+							"line": 5,
+							"character": 22,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/workers.ts#L5"
+						}
+					],
+					"parameters": [
+						{
+							"id": 125,
+							"name": "tasks",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"target": {
+										"sourceFileName": "typings/helper.ts",
+										"qualifiedName": "Fn"
+									},
+									"name": "Fn",
+									"package": "@cc-heart/utils"
+								}
+							}
+						},
+						{
+							"id": 126,
+							"name": "maxConcurrency",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/typescript@5.5.3/node_modules/typescript/lib/lib.es5.d.ts",
+							"qualifiedName": "Promise"
+						},
+						"typeArguments": [
+							{
+								"type": "union",
+								"types": [
+									{
+										"type": "literal",
+										"value": null
+									},
+									{
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "any"
+										}
+									}
+								]
+							}
+						],
+						"name": "Promise",
+						"package": "typescript"
+					}
+				}
+			]
+		},
+		{
+			"id": 127,
+			"name": "executeQueue",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/workers.ts",
+					"line": 37,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/workers.ts#L37"
+				}
+			],
+			"signatures": [
+				{
+					"id": 128,
+					"name": "executeQueue",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Invokes a queue."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "- A promise that resolves when all tasks are completed."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/workers.ts",
+							"line": 37,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/workers.ts#L37"
+						}
+					],
+					"parameters": [
+						{
+							"id": 129,
+							"name": "taskArray",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "An array of tasks to be executed."
+									}
+								]
+							},
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reflection",
+									"declaration": {
+										"id": 130,
+										"name": "__type",
+										"variant": "declaration",
+										"kind": 65536,
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "lib/workers.ts",
+												"line": 38,
+												"character": 19,
+												"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/workers.ts#L38"
+											}
+										],
+										"signatures": [
+											{
+												"id": 131,
+												"name": "__type",
+												"variant": "signature",
+												"kind": 4096,
+												"flags": {},
+												"sources": [
+													{
+														"fileName": "lib/workers.ts",
+														"line": 38,
+														"character": 19,
+														"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/workers.ts#L38"
+													}
+												],
+												"parameters": [
+													{
+														"id": 132,
+														"name": "args",
+														"variant": "param",
+														"kind": 32768,
+														"flags": {
+															"isRest": true
+														},
+														"type": {
+															"type": "intrinsic",
+															"name": "any"
+														}
+													}
+												],
+												"type": {
+													"type": "intrinsic",
+													"name": "any"
+												}
+											}
+										]
+									}
+								}
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/typescript@5.5.3/node_modules/typescript/lib/lib.es5.d.ts",
+							"qualifiedName": "Promise"
+						},
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "void"
+							}
+						],
+						"name": "Promise",
+						"package": "typescript"
+					}
+				}
+			]
+		},
+		{
+			"id": 3,
+			"name": "getCurrentTimeISOString",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/date.ts",
+					"line": 5,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/date.ts#L5"
+				}
+			],
+			"signatures": [
+				{
+					"id": 4,
+					"name": "getCurrentTimeISOString",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Returns the current time in ISO string format."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The current time in ISO string format."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/date.ts",
+							"line": 5,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/date.ts#L5"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": 117,
+			"name": "hasOwn",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/validate.ts",
+					"line": 152,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L152"
+				}
+			],
+			"signatures": [
+				{
+					"id": 118,
+					"name": "hasOwn",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Checks if the given object has its own property."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Returns true if the object has its own property, otherwise false."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/validate.ts",
+							"line": 152,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L152"
+						}
+					],
+					"parameters": [
+						{
+							"id": 119,
+							"name": "obj",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The object to check."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "object"
+							}
+						},
+						{
+							"id": 120,
+							"name": "prop",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The property to check."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			]
+		},
+		{
+			"id": 108,
+			"name": "isArrayEquals",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/validate.ts",
+					"line": 126,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L126"
+				}
+			],
+			"signatures": [
+				{
+					"id": 109,
+					"name": "isArrayEquals",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [],
+						"blockTags": [
+							{
+								"tag": "@deprecated",
+								"content": [
+									{
+										"kind": "text",
+										"text": "v6.0.0 is deprecated\n\nChecks if two arrays are equal."
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Returns true if the arrays are equal, otherwise false."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/validate.ts",
+							"line": 126,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L126"
+						}
+					],
+					"parameters": [
+						{
+							"id": 110,
+							"name": "firstArr",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The first array to compare."
+									}
+								]
+							},
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "unknown"
+								}
+							}
+						},
+						{
+							"id": 111,
+							"name": "secondArr",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The second array to compare."
+									}
+								]
+							},
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "unknown"
+								}
+							}
+						},
+						{
+							"id": 112,
+							"name": "compareFunc",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 113,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "lib/validate.ts",
+											"line": 129,
+											"character": 16,
+											"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L129"
+										}
+									],
+									"signatures": [
+										{
+											"id": 114,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "lib/validate.ts",
+													"line": 129,
+													"character": 16,
+													"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L129"
+												}
+											],
+											"parameters": [
+												{
+													"id": 115,
+													"name": "a",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "any"
+													}
+												},
+												{
+													"id": 116,
+													"name": "b",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "any"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										}
+									]
+								}
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			]
+		},
+		{
+			"id": 84,
+			"name": "isBool",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/validate.ts",
+					"line": 38,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L38"
+				}
+			],
+			"signatures": [
+				{
+					"id": 85,
+					"name": "isBool",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Checks if the provided value is a boolean."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Returns true if the value is a boolean, false otherwise."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/validate.ts",
+							"line": 38,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L38"
+						}
+					],
+					"parameters": [
+						{
+							"id": 86,
+							"name": "val",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The value to check."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					],
+					"type": {
+						"type": "predicate",
+						"name": "val",
+						"asserts": false,
+						"targetType": {
+							"type": "intrinsic",
+							"name": "boolean"
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": 102,
+			"name": "isEffectiveNumber",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/validate.ts",
+					"line": 97,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L97"
+				}
+			],
+			"signatures": [
+				{
+					"id": 103,
+					"name": "isEffectiveNumber",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "determines if it is a valid value other than NaN"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": []
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/validate.ts",
+							"line": 97,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L97"
+						}
+					],
+					"parameters": [
+						{
+							"id": 104,
+							"name": "val",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					],
+					"type": {
+						"type": "predicate",
+						"name": "val",
+						"asserts": false,
+						"targetType": {
+							"type": "intrinsic",
+							"name": "number"
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": 96,
+			"name": "isFalsy",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/validate.ts",
+					"line": 78,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L78"
+				}
+			],
+			"signatures": [
+				{
+					"id": 97,
+					"name": "isFalsy",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Checks if a value is falsy."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Returns true if the value is falsy, otherwise false."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/validate.ts",
+							"line": 78,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L78"
+						}
+					],
+					"parameters": [
+						{
+							"id": 98,
+							"name": "val",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The value to check."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					],
+					"type": {
+						"type": "predicate",
+						"name": "val",
+						"asserts": false,
+						"targetType": {
+							"type": "literal",
+							"value": false
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": 78,
+			"name": "isFn",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/validate.ts",
+					"line": 18,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L18"
+				}
+			],
+			"signatures": [
+				{
+					"id": 79,
+					"name": "isFn",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Checks if the given value is a function."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Returns true if the value is a function, false otherwise."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/validate.ts",
+							"line": 18,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L18"
+						}
+					],
+					"parameters": [
+						{
+							"id": 80,
+							"name": "val",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The value to be checked."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					],
+					"type": {
+						"type": "predicate",
+						"name": "val",
+						"asserts": false,
+						"targetType": {
+							"type": "reference",
+							"target": {
+								"sourceFileName": "node_modules/.pnpm/typescript@5.5.3/node_modules/typescript/lib/lib.es5.d.ts",
+								"qualifiedName": "Function"
+							},
+							"name": "Function",
+							"package": "typescript"
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": 90,
+			"name": "isNull",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/validate.ts",
+					"line": 58,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L58"
+				}
+			],
+			"signatures": [
+				{
+					"id": 91,
+					"name": "isNull",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Checks if the given value is null."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Returns true if the value is null, false otherwise."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/validate.ts",
+							"line": 58,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L58"
+						}
+					],
+					"parameters": [
+						{
+							"id": 92,
+							"name": "val",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The value to check."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					],
+					"type": {
+						"type": "predicate",
+						"name": "val",
+						"asserts": false,
+						"targetType": {
+							"type": "literal",
+							"value": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": 99,
+			"name": "isNumber",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/validate.ts",
+					"line": 88,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L88"
+				}
+			],
+			"signatures": [
+				{
+					"id": 100,
+					"name": "isNumber",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Checks if the given value is a number."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Returns true if the value is a number, false otherwise."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/validate.ts",
+							"line": 88,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L88"
+						}
+					],
+					"parameters": [
+						{
+							"id": 101,
+							"name": "val",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The value to be checked."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					],
+					"type": {
+						"type": "predicate",
+						"name": "val",
+						"asserts": false,
+						"targetType": {
+							"type": "intrinsic",
+							"name": "number"
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": 75,
+			"name": "isObject",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/validate.ts",
+					"line": 9,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L9"
+				}
+			],
+			"signatures": [
+				{
+					"id": 76,
+					"name": "isObject",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Checks if the given value is an object."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Returns true if the value is an object, otherwise false."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/validate.ts",
+							"line": 9,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L9"
+						}
+					],
+					"parameters": [
+						{
+							"id": 77,
+							"name": "val",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The value to be checked."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					],
+					"type": {
+						"type": "predicate",
+						"name": "val",
+						"asserts": false,
+						"targetType": {
+							"type": "intrinsic",
+							"name": "object"
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": 93,
+			"name": "isPrimitive",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/validate.ts",
+					"line": 68,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L68"
+				}
+			],
+			"signatures": [
+				{
+					"id": 94,
+					"name": "isPrimitive",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Determines whether a value is a primitive."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Returns "
+									},
+									{
+										"kind": "code",
+										"text": "`true`"
+									},
+									{
+										"kind": "text",
+										"text": " if the value is a primitive, "
+									},
+									{
+										"kind": "code",
+										"text": "`false`"
+									},
+									{
+										"kind": "text",
+										"text": " otherwise."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/validate.ts",
+							"line": 68,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L68"
+						}
+					],
+					"parameters": [
+						{
+							"id": 95,
+							"name": "val",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The value to check."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			]
+		},
+		{
+			"id": 105,
+			"name": "isPromise",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/validate.ts",
+					"line": 108,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L108"
+				}
+			],
+			"signatures": [
+				{
+					"id": 106,
+					"name": "isPromise",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Checks if a value is a Promise."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Returns "
+									},
+									{
+										"kind": "code",
+										"text": "`true`"
+									},
+									{
+										"kind": "text",
+										"text": " if the value is a Promise, else "
+									},
+									{
+										"kind": "code",
+										"text": "`false`"
+									},
+									{
+										"kind": "text",
+										"text": "."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/validate.ts",
+							"line": 108,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L108"
+						}
+					],
+					"parameters": [
+						{
+							"id": 107,
+							"name": "val",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The value to check."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					],
+					"type": {
+						"type": "predicate",
+						"name": "val",
+						"asserts": false,
+						"targetType": {
+							"type": "reference",
+							"target": {
+								"sourceFileName": "node_modules/.pnpm/typescript@5.5.3/node_modules/typescript/lib/lib.es5.d.ts",
+								"qualifiedName": "Promise"
+							},
+							"typeArguments": [
+								{
+									"type": "intrinsic",
+									"name": "unknown"
+								}
+							],
+							"name": "Promise",
+							"package": "typescript"
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": 81,
+			"name": "isStr",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/validate.ts",
+					"line": 28,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L28"
+				}
+			],
+			"signatures": [
+				{
+					"id": 82,
+					"name": "isStr",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Checks if the given value is a string."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Returns true if the value is a string, false otherwise."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/validate.ts",
+							"line": 28,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L28"
+						}
+					],
+					"parameters": [
+						{
+							"id": 83,
+							"name": "val",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The value to be checked."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					],
+					"type": {
+						"type": "predicate",
+						"name": "val",
+						"asserts": false,
+						"targetType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": 87,
+			"name": "isUndef",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/validate.ts",
+					"line": 48,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L48"
+				}
+			],
+			"signatures": [
+				{
+					"id": 88,
+					"name": "isUndef",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Checks if a value is undefined."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Returns true if the value is undefined, otherwise false."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/validate.ts",
+							"line": 48,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/validate.ts#L48"
+						}
+					],
+					"parameters": [
+						{
+							"id": 89,
+							"name": "val",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The value to check."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					],
+					"type": {
+						"type": "predicate",
+						"name": "val",
+						"asserts": false,
+						"targetType": {
+							"type": "intrinsic",
+							"name": "undefined"
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": 34,
+			"name": "mulSplit",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/string.ts",
+					"line": 26,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/string.ts#L26"
+				}
+			],
+			"signatures": [
+				{
+					"id": 35,
+					"name": "mulSplit",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [],
+						"blockTags": [
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Add the number of cuts based on the original split and return all subsets after the cut"
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "a new split array, length is num + 1"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/string.ts",
+							"line": 26,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/string.ts#L26"
+						}
+					],
+					"parameters": [
+						{
+							"id": 36,
+							"name": "str",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "need to split of primitive string"
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 37,
+							"name": "splitStr",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "split params"
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 38,
+							"name": "num",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "split limit"
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"defaultValue": "-1"
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": 29,
+			"name": "noop",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/shard.ts",
+					"line": 6,
+					"character": 13,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/shard.ts#L6"
+				}
+			],
+			"signatures": [
+				{
+					"id": 30,
+					"name": "noop",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "This function does nothing."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "No return value."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/shard.ts",
+							"line": 6,
+							"character": 20,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/shard.ts#L6"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "void"
+					}
+				}
+			]
+		},
+		{
+			"id": 60,
+			"name": "objectToQueryString",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/url.ts",
+					"line": 77,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/url.ts#L77"
+				}
+			],
+			"signatures": [
+				{
+					"id": 61,
+					"name": "objectToQueryString",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Converts an object to a query string."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The query string representation of "
+									},
+									{
+										"kind": "code",
+										"text": "`data`"
+									},
+									{
+										"kind": "text",
+										"text": "."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/url.ts",
+							"line": 77,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/url.ts#L77"
+						}
+					],
+					"typeParameter": [
+						{
+							"id": 62,
+							"name": "T",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/typescript@5.5.3/node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Record"
+								},
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/.pnpm/typescript@5.5.3/node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "PropertyKey"
+										},
+										"name": "PropertyKey",
+										"package": "typescript"
+									},
+									{
+										"type": "intrinsic",
+										"name": "any"
+									}
+								],
+								"name": "Record",
+								"package": "typescript"
+							}
+						}
+					],
+					"parameters": [
+						{
+							"id": 63,
+							"name": "data",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The object to convert."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": 62,
+								"name": "T",
+								"package": "@cc-heart/utils",
+								"refersToTypeParameter": true
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": 50,
+			"name": "parseKey",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/url.ts",
+					"line": 4,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/url.ts#L4"
+				}
+			],
+			"signatures": [
+				{
+					"id": 51,
+					"name": "parseKey",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lib/url.ts",
+							"line": 4,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/url.ts#L4"
+						}
+					],
+					"parameters": [
+						{
+							"id": 52,
+							"name": "obj",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/typescript@5.5.3/node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Record"
+								},
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/.pnpm/typescript@5.5.3/node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "PropertyKey"
+										},
+										"name": "PropertyKey",
+										"package": "typescript"
+									},
+									{
+										"type": "intrinsic",
+										"name": "any"
+									}
+								],
+								"name": "Record",
+								"package": "typescript"
+							}
+						},
+						{
+							"id": 53,
+							"name": "key",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 54,
+							"name": "value",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "any"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "void"
+					}
+				}
+			]
+		},
+		{
+			"id": 133,
+			"name": "pipe",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/workers.ts",
+					"line": 72,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/workers.ts#L72"
+				}
+			],
+			"signatures": [
+				{
+					"id": 134,
+					"name": "pipe",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Takes a series of functions and returns a new function that runs these functions in sequence.\nIf a function returns a Promise, the next function is called with the resolved value."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "A new function that takes any number of arguments and pipes them through "
+									},
+									{
+										"kind": "code",
+										"text": "`fns`"
+									},
+									{
+										"kind": "text",
+										"text": "."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/workers.ts",
+							"line": 72,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/workers.ts#L72"
+						}
+					],
+					"parameters": [
+						{
+							"id": 135,
+							"name": "fns",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isRest": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The functions to pipe."
+									}
+								]
+							},
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"target": {
+										"sourceFileName": "typings/helper.ts",
+										"qualifiedName": "Fn"
+									},
+									"name": "Fn",
+									"package": "@cc-heart/utils"
+								}
+							}
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 136,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "lib/workers.ts",
+									"line": 73,
+									"character": 9,
+									"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/workers.ts#L73"
+								}
+							],
+							"signatures": [
+								{
+									"id": 137,
+									"name": "__type",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "lib/workers.ts",
+											"line": 73,
+											"character": 9,
+											"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/workers.ts#L73"
+										}
+									],
+									"parameters": [
+										{
+											"id": 138,
+											"name": "args",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isRest": true
+											},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "intrinsic",
+													"name": "any"
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": 55,
+			"name": "queryStringToObject",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/url.ts",
+					"line": 56,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/url.ts#L56"
+				}
+			],
+			"signatures": [
+				{
+					"id": 56,
+					"name": "queryStringToObject",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Converts a query string to an object."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\n`queryStringToObject('foo=1&bar=2&baz=3')`\n```"
+									}
+								]
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\n`queryStringToObject('foo=&bar=2&baz=3')`\n```"
+									}
+								]
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\n`queryStringToObject('foo[0]=1&foo[1]=2&baz=3')`\n```"
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The object representation of the query string in "
+									},
+									{
+										"kind": "code",
+										"text": "`url`"
+									},
+									{
+										"kind": "text",
+										"text": "."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/url.ts",
+							"line": 56,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/url.ts#L56"
+						}
+					],
+					"typeParameter": [
+						{
+							"id": 57,
+							"name": "T",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The type of the URL string."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 58,
+							"name": "U",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The type of the object to return."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/typescript@5.5.3/node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Record"
+								},
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/.pnpm/typescript@5.5.3/node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "PropertyKey"
+										},
+										"name": "PropertyKey",
+										"package": "typescript"
+									},
+									{
+										"type": "intrinsic",
+										"name": "any"
+									}
+								],
+								"name": "Record",
+								"package": "typescript"
+							},
+							"default": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "typings/url.ts",
+									"qualifiedName": "QueryStringToObject"
+								},
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": 57,
+										"name": "T",
+										"package": "@cc-heart/utils",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "QueryStringToObject",
+								"package": "@cc-heart/utils"
+							}
+						}
+					],
+					"parameters": [
+						{
+							"id": 59,
+							"name": "url",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The URL string to convert."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": 57,
+								"name": "T",
+								"package": "@cc-heart/utils",
+								"refersToTypeParameter": true
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": 58,
+						"name": "U",
+						"package": "@cc-heart/utils",
+						"refersToTypeParameter": true
+					}
+				}
+			]
+		},
+		{
+			"id": 25,
+			"name": "random",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/random.ts",
+					"line": 8,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/random.ts#L8"
+				}
+			],
+			"signatures": [
+				{
+					"id": 26,
+					"name": "random",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Generates a random integer between min (inclusive) and max (inclusive)."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "A random integer between min and max."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/random.ts",
+							"line": 8,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/random.ts#L8"
+						}
+					],
+					"parameters": [
+						{
+							"id": 27,
+							"name": "min",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The minimum value (inclusive)."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 28,
+							"name": "max",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The maximum value (inclusive)."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "randomUUID",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/crypto.ts",
+					"line": 7,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/crypto.ts#L7"
+				}
+			],
+			"signatures": [
+				{
+					"id": 2,
+					"name": "randomUUID",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [],
+						"blockTags": [
+							{
+								"tag": "@deprecated",
+								"content": [
+									{
+										"kind": "text",
+										"text": "v6.0.0 is deprecated\nGenerates a random UUID."
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The generated UUID."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/crypto.ts",
+							"line": 7,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/crypto.ts#L7"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": 31,
+			"name": "sleep",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/shard.ts",
+					"line": 16,
+					"character": 13,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/shard.ts#L16"
+				}
+			],
+			"signatures": [
+				{
+					"id": 32,
+					"name": "sleep",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Sleeps for a given delay."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "A promise that resolves after the delay."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/shard.ts",
+							"line": 16,
+							"character": 21,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/shard.ts#L16"
+						}
+					],
+					"parameters": [
+						{
+							"id": 33,
+							"name": "delay",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The delay, in milliseconds."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/typescript@5.5.3/node_modules/typescript/lib/lib.es5.d.ts",
+							"qualifiedName": "Promise"
+						},
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						],
+						"name": "Promise",
+						"package": "typescript"
+					}
+				}
+			]
+		},
+		{
+			"id": 46,
+			"name": "unCapitalize",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/string.ts",
+					"line": 16,
+					"character": 13,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/string.ts#L16"
+				}
+			],
+			"signatures": [
+				{
+					"id": 47,
+					"name": "unCapitalize",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Returns a new string with the first character converted to lowercase."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "- The unCapitalized string."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/string.ts",
+							"line": 16,
+							"character": 28,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/string.ts#L16"
+						}
+					],
+					"typeParameter": [
+						{
+							"id": 48,
+							"name": "T",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"parameters": [
+						{
+							"id": 49,
+							"name": "target",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The string to be unCapitalized."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": 48,
+								"name": "T",
+								"package": "@cc-heart/utils",
+								"refersToTypeParameter": true
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/typescript@5.5.3/node_modules/typescript/lib/lib.es5.d.ts",
+							"qualifiedName": "Uncapitalize"
+						},
+						"typeArguments": [
+							{
+								"type": "reference",
+								"target": 48,
+								"name": "T",
+								"package": "@cc-heart/utils",
+								"refersToTypeParameter": true
+							}
+						],
+						"name": "Uncapitalize",
+						"package": "typescript"
+					}
+				}
+			]
+		},
+		{
+			"id": 39,
+			"name": "underlineToHump",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "lib/string.ts",
+					"line": 43,
+					"character": 16,
+					"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/string.ts#L43"
+				}
+			],
+			"signatures": [
+				{
+					"id": 40,
+					"name": "underlineToHump",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Converts an underline-separated string to camel case.\ne.g. underlineToHump('hello_word') => 'helloWord'"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The camel case version of the input string."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "lib/string.ts",
+							"line": 43,
+							"character": 16,
+							"url": "https://github.com/cc-hearts/utils/blob/287f8c35b66c91517df111f45b8f6a52dfe4b9c3/lib/string.ts#L43"
+						}
+					],
+					"parameters": [
+						{
+							"id": 41,
+							"name": "target",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The underline-separated string to convert."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Functions",
+			"children": [
+				121,
+				71,
+				67,
+				42,
+				139,
+				64,
+				20,
+				5,
+				16,
+				123,
+				127,
+				3,
+				117,
+				108,
+				84,
+				102,
+				96,
+				78,
+				90,
+				99,
+				75,
+				93,
+				105,
+				81,
+				87,
+				34,
+				29,
+				60,
+				50,
+				133,
+				55,
+				25,
+				1,
+				31,
+				46,
+				39
+			]
+		}
+	],
+	"packageName": "@cc-heart/utils",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "# @cc-heart/utils\n\n[Docs](https://cc-hearts.github.io/utils/)\n\nA library of JavaScript tools\n\n## Install\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```shell\nnpm install @cc-heart/utils\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## Usage\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```js\nimport { capitalize } from '@cc-heart/utils'\n\ncapitalize('string') // String\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## LICENSE\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "`@cc-heart/utils`"
+		},
+		{
+			"kind": "text",
+			"text": " is licensed under the [MIT License](./LICENSE)."
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "index.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "lib/crypto.ts",
+			"qualifiedName": "randomUUID"
+		},
+		"2": {
+			"sourceFileName": "lib/crypto.ts",
+			"qualifiedName": "randomUUID"
+		},
+		"3": {
+			"sourceFileName": "lib/date.ts",
+			"qualifiedName": "getCurrentTimeISOString"
+		},
+		"4": {
+			"sourceFileName": "lib/date.ts",
+			"qualifiedName": "getCurrentTimeISOString"
+		},
+		"5": {
+			"sourceFileName": "lib/define.ts",
+			"qualifiedName": "defineOnceFn"
+		},
+		"6": {
+			"sourceFileName": "lib/define.ts",
+			"qualifiedName": "defineOnceFn"
+		},
+		"7": {
+			"sourceFileName": "lib/define.ts",
+			"qualifiedName": "T"
+		},
+		"8": {
+			"sourceFileName": "lib/define.ts",
+			"qualifiedName": "fn"
+		},
+		"9": {
+			"sourceFileName": "lib/define.ts",
+			"qualifiedName": "__type"
+		},
+		"10": {
+			"sourceFileName": "lib/define.ts",
+			"qualifiedName": "__type"
+		},
+		"11": {
+			"sourceFileName": "lib/define.ts",
+			"qualifiedName": "args"
+		},
+		"12": {
+			"sourceFileName": "lib/define.ts",
+			"qualifiedName": "__function"
+		},
+		"13": {
+			"sourceFileName": "lib/define.ts",
+			"qualifiedName": "__function"
+		},
+		"14": {
+			"sourceFileName": "lib/define.ts",
+			"qualifiedName": "this"
+		},
+		"15": {
+			"sourceFileName": "lib/define.ts",
+			"qualifiedName": "args"
+		},
+		"16": {
+			"sourceFileName": "lib/define.ts",
+			"qualifiedName": "defineThrottleFn"
+		},
+		"17": {
+			"sourceFileName": "lib/define.ts",
+			"qualifiedName": "defineThrottleFn"
+		},
+		"18": {
+			"sourceFileName": "lib/define.ts",
+			"qualifiedName": "fn"
+		},
+		"19": {
+			"sourceFileName": "lib/define.ts",
+			"qualifiedName": "delay"
+		},
+		"20": {
+			"sourceFileName": "lib/define.ts",
+			"qualifiedName": "defineDebounceFn"
+		},
+		"21": {
+			"sourceFileName": "lib/define.ts",
+			"qualifiedName": "defineDebounceFn"
+		},
+		"22": {
+			"sourceFileName": "lib/define.ts",
+			"qualifiedName": "fn"
+		},
+		"23": {
+			"sourceFileName": "lib/define.ts",
+			"qualifiedName": "delay"
+		},
+		"24": {
+			"sourceFileName": "lib/define.ts",
+			"qualifiedName": "immediate"
+		},
+		"25": {
+			"sourceFileName": "lib/random.ts",
+			"qualifiedName": "random"
+		},
+		"26": {
+			"sourceFileName": "lib/random.ts",
+			"qualifiedName": "random"
+		},
+		"27": {
+			"sourceFileName": "lib/random.ts",
+			"qualifiedName": "min"
+		},
+		"28": {
+			"sourceFileName": "lib/random.ts",
+			"qualifiedName": "max"
+		},
+		"29": {
+			"sourceFileName": "lib/shard.ts",
+			"qualifiedName": "noop"
+		},
+		"30": {
+			"sourceFileName": "lib/shard.ts",
+			"qualifiedName": "noop"
+		},
+		"31": {
+			"sourceFileName": "lib/shard.ts",
+			"qualifiedName": "sleep"
+		},
+		"32": {
+			"sourceFileName": "lib/shard.ts",
+			"qualifiedName": "sleep"
+		},
+		"33": {
+			"sourceFileName": "lib/shard.ts",
+			"qualifiedName": "delay"
+		},
+		"34": {
+			"sourceFileName": "lib/string.ts",
+			"qualifiedName": "mulSplit"
+		},
+		"35": {
+			"sourceFileName": "lib/string.ts",
+			"qualifiedName": "mulSplit"
+		},
+		"36": {
+			"sourceFileName": "lib/string.ts",
+			"qualifiedName": "str"
+		},
+		"37": {
+			"sourceFileName": "lib/string.ts",
+			"qualifiedName": "splitStr"
+		},
+		"38": {
+			"sourceFileName": "lib/string.ts",
+			"qualifiedName": "num"
+		},
+		"39": {
+			"sourceFileName": "lib/string.ts",
+			"qualifiedName": "underlineToHump"
+		},
+		"40": {
+			"sourceFileName": "lib/string.ts",
+			"qualifiedName": "underlineToHump"
+		},
+		"41": {
+			"sourceFileName": "lib/string.ts",
+			"qualifiedName": "target"
+		},
+		"42": {
+			"sourceFileName": "lib/string.ts",
+			"qualifiedName": "capitalize"
+		},
+		"43": {
+			"sourceFileName": "lib/string.ts",
+			"qualifiedName": "capitalize"
+		},
+		"44": {
+			"sourceFileName": "lib/string.ts",
+			"qualifiedName": "T"
+		},
+		"45": {
+			"sourceFileName": "lib/string.ts",
+			"qualifiedName": "target"
+		},
+		"46": {
+			"sourceFileName": "lib/string.ts",
+			"qualifiedName": "unCapitalize"
+		},
+		"47": {
+			"sourceFileName": "lib/string.ts",
+			"qualifiedName": "unCapitalize"
+		},
+		"48": {
+			"sourceFileName": "lib/string.ts",
+			"qualifiedName": "T"
+		},
+		"49": {
+			"sourceFileName": "lib/string.ts",
+			"qualifiedName": "target"
+		},
+		"50": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "parseKey"
+		},
+		"51": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "parseKey"
+		},
+		"52": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "obj"
+		},
+		"53": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "key"
+		},
+		"54": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "value"
+		},
+		"55": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "queryStringToObject"
+		},
+		"56": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "queryStringToObject"
+		},
+		"57": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "T"
+		},
+		"58": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "U"
+		},
+		"59": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "url"
+		},
+		"60": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "objectToQueryString"
+		},
+		"61": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "objectToQueryString"
+		},
+		"62": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "T"
+		},
+		"63": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "data"
+		},
+		"64": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "convertParamsRouterToRegExp"
+		},
+		"65": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "convertParamsRouterToRegExp"
+		},
+		"66": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "path"
+		},
+		"67": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "basename"
+		},
+		"68": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "basename"
+		},
+		"69": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "path"
+		},
+		"70": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "suffix"
+		},
+		"71": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "arrayToQueryString"
+		},
+		"72": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "arrayToQueryString"
+		},
+		"73": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "array"
+		},
+		"74": {
+			"sourceFileName": "lib/url.ts",
+			"qualifiedName": "field"
+		},
+		"75": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isObject"
+		},
+		"76": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isObject"
+		},
+		"77": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "val"
+		},
+		"78": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isFn"
+		},
+		"79": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isFn"
+		},
+		"80": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "val"
+		},
+		"81": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isStr"
+		},
+		"82": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isStr"
+		},
+		"83": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "val"
+		},
+		"84": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isBool"
+		},
+		"85": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isBool"
+		},
+		"86": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "val"
+		},
+		"87": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isUndef"
+		},
+		"88": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isUndef"
+		},
+		"89": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "val"
+		},
+		"90": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isNull"
+		},
+		"91": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isNull"
+		},
+		"92": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "val"
+		},
+		"93": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isPrimitive"
+		},
+		"94": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isPrimitive"
+		},
+		"95": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "val"
+		},
+		"96": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isFalsy"
+		},
+		"97": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isFalsy"
+		},
+		"98": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "val"
+		},
+		"99": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isNumber"
+		},
+		"100": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isNumber"
+		},
+		"101": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "val"
+		},
+		"102": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isEffectiveNumber"
+		},
+		"103": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isEffectiveNumber"
+		},
+		"104": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "val"
+		},
+		"105": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isPromise"
+		},
+		"106": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isPromise"
+		},
+		"107": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "val"
+		},
+		"108": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isArrayEquals"
+		},
+		"109": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "isArrayEquals"
+		},
+		"110": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "firstArr"
+		},
+		"111": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "secondArr"
+		},
+		"112": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "compareFunc"
+		},
+		"113": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "__type"
+		},
+		"114": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "__type"
+		},
+		"115": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "a"
+		},
+		"116": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "b"
+		},
+		"117": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "hasOwn"
+		},
+		"118": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "hasOwn"
+		},
+		"119": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "obj"
+		},
+		"120": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "prop"
+		},
+		"121": {
+			"sourceFileName": "lib/validate.ts",
+			"qualifiedName": "_toString"
+		},
+		"122": {
+			"sourceFileName": "node_modules/.pnpm/typescript@5.5.3/node_modules/typescript/lib/lib.es5.d.ts",
+			"qualifiedName": "_toString"
+		},
+		"123": {
+			"sourceFileName": "lib/workers.ts",
+			"qualifiedName": "executeConcurrency"
+		},
+		"124": {
+			"sourceFileName": "lib/workers.ts",
+			"qualifiedName": "executeConcurrency"
+		},
+		"125": {
+			"sourceFileName": "lib/workers.ts",
+			"qualifiedName": "tasks"
+		},
+		"126": {
+			"sourceFileName": "lib/workers.ts",
+			"qualifiedName": "maxConcurrency"
+		},
+		"127": {
+			"sourceFileName": "lib/workers.ts",
+			"qualifiedName": "executeQueue"
+		},
+		"128": {
+			"sourceFileName": "lib/workers.ts",
+			"qualifiedName": "executeQueue"
+		},
+		"129": {
+			"sourceFileName": "lib/workers.ts",
+			"qualifiedName": "taskArray"
+		},
+		"130": {
+			"sourceFileName": "lib/workers.ts",
+			"qualifiedName": "__type"
+		},
+		"131": {
+			"sourceFileName": "lib/workers.ts",
+			"qualifiedName": "__type"
+		},
+		"132": {
+			"sourceFileName": "lib/workers.ts",
+			"qualifiedName": "args"
+		},
+		"133": {
+			"sourceFileName": "lib/workers.ts",
+			"qualifiedName": "pipe"
+		},
+		"134": {
+			"sourceFileName": "lib/workers.ts",
+			"qualifiedName": "pipe"
+		},
+		"135": {
+			"sourceFileName": "lib/workers.ts",
+			"qualifiedName": "fns"
+		},
+		"136": {
+			"sourceFileName": "lib/workers.ts",
+			"qualifiedName": "__function"
+		},
+		"137": {
+			"sourceFileName": "lib/workers.ts",
+			"qualifiedName": "__function"
+		},
+		"138": {
+			"sourceFileName": "lib/workers.ts",
+			"qualifiedName": "args"
+		},
+		"139": {
+			"sourceFileName": "lib/workers.ts",
+			"qualifiedName": "compose"
+		},
+		"140": {
+			"sourceFileName": "lib/workers.ts",
+			"qualifiedName": "compose"
+		},
+		"141": {
+			"sourceFileName": "lib/workers.ts",
+			"qualifiedName": "fns"
+		},
+		"142": {
+			"sourceFileName": "lib/workers.ts",
+			"qualifiedName": "__function"
+		},
+		"143": {
+			"sourceFileName": "lib/workers.ts",
+			"qualifiedName": "__function"
+		},
+		"144": {
+			"sourceFileName": "lib/workers.ts",
+			"qualifiedName": "args"
+		}
+	}
+}
